@@ -1,2 +1,2 @@
 Inici
-<image src="/assets/Imatges/ex1.png>
+<image src="assets/imatges/maeb.jpg>
