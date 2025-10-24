@@ -9,4 +9,4 @@ Imatges
 README.md
 Fitxers Terraform
 
-!(./assets/imatges/Topologia1.jpeg)
+![](./assets/imatges/Topologia1.jpeg)
