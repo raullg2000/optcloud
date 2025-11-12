@@ -1,11 +1,11 @@
 variable "region" {
   type        = string
-  default     = "eu-west-1" 
+  default     = "us-east-1" 
 }
 
 variable "available_azs" {
   type        = list(string)
-  default     = ["eu-west-1a", "eu-west-1b"]
+  default     = ["us-east-1a", "us-east-1b"]
 }
 
 variable "projecte_raul" {
