@@ -1,0 +1,22 @@
+# ssh_config.tpl
+# START: Configuració Terraform ProxyJump
+
+# Configuración del Bastion Host
+Host bastion
+  HostName 107.20.136.208
+  User ubuntu
+  IdentityFile ~/.ssh/bastion.pem
+  
+# Configuración de las Instancias Privadas
+Host private-1
+  HostName 10.0.2.53
+  User ubuntu
+  IdentityFile ~/.ssh/private-1.pem
+  ProxyJump ubuntu@107.20.136.208
+Host private-2
+  HostName 10.0.3.179
+  User ubuntu
+  IdentityFile ~/.ssh/private-2.pem
+  ProxyJump ubuntu@107.20.136.208
+
+# END: Configuració Terraform ProxyJump
